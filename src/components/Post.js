@@ -1,11 +1,11 @@
 import React from 'react'
-import marked from 'marked'
+/* import marked from 'marked' */
 import { Link } from "react-router-dom";
 
 const Post = ({article}) => {
    /*  console.log (article) */
-    const {name, image, kurz, discription, slug} = article.fields
-    const description = marked(discription)
+    const {name, image, kurz, slug} = article.fields
+    // const description = marked(discription)
     return (
        
     <Link to={`/Recipe/${slug}`}>
